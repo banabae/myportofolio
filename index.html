@@ -146,13 +146,13 @@
 								</h4>
 							</div>
 							<div class="card-body p-4">
-								<div class="row card-text">
+								<div class="row card-text pb-4">
 									<div class="col-md-3">
 										<div id="list-example" class="">
 										  <a class="list-group-item list-group-item-2 list-group-item-action text-high" id="1">Prilude Studio</a>
 										  <a class="list-group-item list-group-item-2 list-group-item-action text-high" id="2">Resis.ID</a>
 										  <a class="list-group-item list-group-item-2 list-group-item-action text-high" id="3">Laman Dosen</a>
-										  <!-- <a class="list-group-item list-group-item-2 list-group-item-action text-high" id="4">Item 4</a> -->
+										  <a class="list-group-item list-group-item-2 list-group-item-action text-high" id="4">Cuang Coding</a>
 										</div>
 									</div>
 									<div class="col-md-9 text-high">
@@ -160,7 +160,7 @@
 										  <div id="list-item-1">
 										  	<div class="row">
 										  		<div class="col-md-8">
-										  			<h4 class="color-primary fw-bold">Software Engineering @ <a href="https://www.priludestudio.com/" target="_blank" class="linked">Prilude Studio</a></h4>
+										  			<h4 class="color-primary fw-bold">Software Engineering || <a href="https://www.priludestudio.com/" target="_blank" class="linked">Prilude Studio</a></h4>
 												  	<p class="fs-6">04 February - 22 November 2019</p>
 													<div class="row">
 														<div class="col-md-1"><i class="fa fa-check"></i></div>
@@ -186,13 +186,13 @@
 										  <div id="list-item-2">
 										  	<div class="row">
 										  		<div class="col-md-8">
-										  			<h5 class="color-primary fw-bold">Co-founder @ <a href="https://resis.id" target="_blank" class="linked">Resis.ID</a></h5>
+										  			<h5 class="color-primary fw-bold">Co-founder || <a href="https://resis.id" target="_blank" class="linked">Resis.ID</a></h5>
 												  	<p class="fs-6">April 2021 - Now</p>
-													<p>
-														<ul>
-															<li>developing resis.id from the technology division</li>
-														</ul>
-													</p>
+													  <div class="row">
+														<div class="col-md-1"><i class="fa fa-check"></i></div>
+														<div class="col-md-11">developing resis.id from the technology division</div>
+													
+													</div>
 										  		</div>
 										  		<div class="col-md-4">
 										  			<img id="pp2" src="./img/resis-profile.webp" class="rounded float-end img-fluid" alt="..." width="200px" height="200px">
@@ -202,13 +202,13 @@
 										  <div id="list-item-3">
 										  	<div class="row">
 										  		<div class="col-md-8">
-										  			<h4 class="color-primary fw-bold">Chief Information  Officer @ Laman Dosen</h4>
+										  			<h4 class="color-primary fw-bold">Chief Information  Officer || <a href="https://www.lamandosen.com" target="_blank" class="linked">Laman Dosen</a></h4>
 												  	<p class="fs-6">April - now</p>
-													<!-- <div class="row">
+													<div class="row">
 														<div class="col-md-1"><i class="fa fa-check"></i></div>
-														<div class="col-md-11">-</div>
+														<div class="col-md-11">developing lamandosen.com from the technology division</div>
 													
-													</div> -->
+													</div>
 										  		</div>
 										  		<div class="col-md-4">
 													  <!-- for documentation -->
@@ -216,6 +216,22 @@
 										  		</div>
 										  	</div>
 										  </div>
+										  <div id="list-item-4">
+											<div class="row">
+												<div class="col-md-8">
+													<h5 class="color-primary fw-bold">Owner || <a href="https://www.instagram.com/cuangcoding/" target="_blank" class="linked">Cuang Coding</a></h5>
+													<p class="fs-6">November 2020 - Now</p>
+												  <div class="row">
+													<div class="col-md-1"><i class="fa fa-check"></i></div>
+													<div class="col-md-11">Sharing all tip and trick about technology especially web programming</div>
+												
+												</div>
+												</div>
+												<div class="col-md-4">
+													<img id="pp2" src="./img/cuangcoding.png" class="rounded float-end img-fluid" alt="..." width="200px" height="200px">
+												</div>
+											</div>
+										</div>
 										  <!-- next experience -->
 										  <!-- <div id="list-item-4">
 										  	<h4>Item 4</h4>
@@ -356,7 +372,7 @@
 $('#list-item-1').show();
 $('#list-item-2').hide();
 $('#list-item-3').hide();
-// $('#list-item-4').hide();
+$('#list-item-4').hide();
 $('.contact-right').hide();
 $('#preloader').show();
 $(document).ready(function () {
@@ -400,40 +416,46 @@ $('#1').click(function() {
 	$('#list-item-1').fadeIn();
 	$('#list-item-2').hide();
 	$('#list-item-3').hide();
-	// $('#list-item-4').hide();
+	$('#list-item-4').hide();
 	$('#list-item-1').addClass("active");
 	$('#list-item-2').removeClass("active");
 	$('#list-item-3').removeClass("active");
+	$('#list-item-4').removeClass("active");
 	// $(this).removeClass("active");
 });
 $('#2').click(function() {
 	$('#list-item-1').hide();
 	$('#list-item-2').fadeIn();
 	$('#list-item-3').hide();
-	// $('#list-item-4').hide();
+	$('#list-item-4').hide();
 	$('#list-item-1').removeClass("active");
 	$('#list-item-2').addClass("active");
 	$('#list-item-3').removeClass("active");
+	$('#list-item-4').removeClass("active");
 	// $(this).removeClass("active");
 });
 $('#3').click(function() {
 	$('#list-item-1').hide();
 	$('#list-item-2').hide();
 	$('#list-item-3').fadeIn();
-	// $('#list-item-4').hide();
+	$('#list-item-4').hide();
 	$('#list-item-1').removeClass("active");
 	$('#list-item-2').removeClass("active");
 	$('#list-item-3').addClass("active");
+	$('#list-item-4').removeClass("active");
 	// $(this).removeClass("active");
 });
-// $('#4').click(function() {
-// 	$('#list-item-1').hide();
-// 	$('#list-item-2').hide();
-// 	$('#list-item-3').hide();
-// 	$('#list-item-4').fadeIn();
-// 	$(this).addClass("active");
-// 	$(this).removeClass("active");
-// });
+$('#4').click(function() {
+	$('#list-item-1').hide();
+	$('#list-item-2').hide();
+	$('#list-item-3').hide();
+	$('#list-item-4').fadeIn();
+	$('#list-item-1').removeClass("active");
+	$('#list-item-2').removeClass("active");
+	$('#list-item-3').removeClass("active");
+	$('#list-item-4').addClass("active");
+	// $(this).removeClass("active");
+});
 </script>
 <!-- animated JS -->
 
